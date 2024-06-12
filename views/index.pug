@@ -1,0 +1,15 @@
+extends layout 
+
+include mixins/_head
+
+block head 
+  meta(name="description" content="SimpleWorks - SEO text here")
+  title SimpleWorks | Kezdőlap
+  +head 
+block content
+  main 
+    .hero 
+      h1.hero--title.text__hero SimpleWorks
+      p.hero--text.text__hero A weboldalak és webalkalmazások fejlesztésének művészete
+      a.hero--button.text__hero(href="/szolgaltatasok") Szolgáltatásaink
+  

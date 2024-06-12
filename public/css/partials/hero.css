@@ -1,0 +1,65 @@
+/*********************************************************************\
+HERO SECTION
+\********************************************************************/
+/*
+*Hero background and color.................mobile view
+*
+*Hero layout and background changes........for bigger screens
+*/
+
+
+/* Hero background and color */
+
+.hero--main {
+  background:  url('/images/photos/test-Mobile_woman-relaxing.jpg') no-repeat center / cover;
+  min-height:         var(--hero-height);
+  width:              100%;
+  
+  display:            flex;
+  flex-flow:          column nowrap;
+  justify-content:    space-between;
+  align-items:        center;
+  color:              var(--secondary-color);
+  padding:            6.6vh 1rem calc(var(--line-height-small) + 1rem) 1rem;
+} 
+
+.hero-text--wrapper {
+  display:         flex;
+  flex-flow:       column nowrap;
+  justify-content: center;
+  align-items:     center;
+  width:           100%;
+ 
+
+}
+
+  
+
+/*Hero background and layout for bigger screens*/
+
+@media (max-height: 539px) {
+  .hero--main {
+    padding-top: .6rem;
+    padding-top: 1.97938vh;
+  }
+  .title__hero {
+    line-height: calc(var(--hero-title) * 1.2);
+  }
+}
+@media (min-width: 986px) {
+  .hero--main {
+    background:  url('/images/photos/Desktop_woman-relaxing.jpg') no-repeat center / cover;
+    justify-content: flex-start;
+    align-items:     flex-start;
+    gap:             2rem;
+    padding:         10% 0 0 10%;
+  }
+  .hero-text--wrapper {
+    align-items: flex-start;
+    width:       max(39.66rem, 50%);
+   
+  }
+  .title__hero, .text__hero {
+    text-align: left;
+  }
+}
