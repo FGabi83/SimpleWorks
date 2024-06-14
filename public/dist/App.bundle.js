@@ -71,7 +71,6 @@ function dropdownMenu() {
   var navWrapper = document.querySelector(".js-nav--wrapper");
   navMenu.addEventListener("click", function () {
     navWrapper.classList.toggle("js-is-open");
-    navMenu.classList.toggle("js-highlight");
   });
 }
 /* harmony default export */ __webpack_exports__["default"] = (dropdownMenu);

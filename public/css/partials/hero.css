@@ -10,56 +10,81 @@ HERO SECTION
 
 /* Hero background and color */
 
-.hero--main {
-  background:  url('/images/photos/test-Mobile_woman-relaxing.jpg') no-repeat center / cover;
-  min-height:         var(--hero-height);
+.hero {
   width:              100%;
-  
   display:            flex;
   flex-flow:          column nowrap;
-  justify-content:    space-between;
+  justify-content:    flex-start;
   align-items:        center;
-  color:              var(--secondary-color);
-  padding:            6.6vh 1rem calc(var(--line-height-small) + 1rem) 1rem;
+ 
+  
 } 
 
-.hero-text--wrapper {
+
+.hero-content {
   display:         flex;
   flex-flow:       column nowrap;
   justify-content: center;
-  align-items:     center;
+  align-items:     flex-start;
   width:           100%;
+  padding-left:    var(--padding-left-right);
+  padding-right:   var(--padding-left-right);
+  padding-top:     1.8125rem;
+  background:      linear-gradient(to bottom, #ffff 50%, #EBEAEF 100%);
  
+}
 
+.hero-image {
+  width:           100%;
+  aspect-ratio:    1.5 / 1;
+  background:  url('/images/photos/hero-mobile.jpg') no-repeat center / cover;
+  box-shadow:      0 0 10px 0 rgba(235, 234, 239, 1);
 }
 
   
 
 /*Hero background and layout for bigger screens*/
 
-@media (max-height: 539px) {
-  .hero--main {
-    padding-top: .6rem;
-    padding-top: 1.97938vh;
+@media (min-width: 641px) {
+ 
+  .hero-content > * {
+    width:  80%;
+    align-self: flex-start;
   }
-  .title__hero {
-    line-height: calc(var(--hero-title) * 1.2);
+  .hero-image {
+    background:    url('/images/photos/hero-tablet.jpg') no-repeat center / cover;
   }
+  
+  
 }
 @media (min-width: 986px) {
-  .hero--main {
-    background:  url('/images/photos/Desktop_woman-relaxing.jpg') no-repeat center / cover;
-    justify-content: flex-start;
-    align-items:     flex-start;
-    gap:             2rem;
-    padding:         10% 0 0 10%;
+  .hero {
+    flex-flow:        row-reverse nowrap;
+    justify-content:  center;
+    align-items:      center;
+    height:           var(--hero-height);
   }
-  .hero-text--wrapper {
-    align-items: flex-start;
-    width:       max(39.66rem, 50%);
-   
+  .hero-content {
+    background:      var(--background-color);
+    width:           50%;
+    height:          100%;
+    
   }
-  .title__hero, .text__hero {
-    text-align: left;
+  .hero-content > * {
+    width: min(100%, 720px);
+    
+  }
+  .hero-image {
+    background:    url('/images/photos/hero-desktop.jpg') no-repeat center / cover;
+    background-position: 35% center;
+    width:           50%;
+    height:          100%;
+    box-shadow:      unset;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero {
+   border-bottom: 2px solid #E9E9F1;
   }
 }

@@ -25,6 +25,8 @@ footer {
       text-align:      center;
       letter-spacing:  0.15rem;
       text-transform:  uppercase;
+      font-size:       .75rem;
+      line-height:     var(--line-height-small);
     }
 
     .footer--text__link {

@@ -16,7 +16,7 @@ header {
   flex-flow:        row nowrap;
   justify-content:  center;
   align-items:      flex-start;
-  
+  position:         fixed;
 }
 
   .header--wrapper {
@@ -28,7 +28,7 @@ header {
     opacity:          1;
     padding-left:     5%;
     padding-right:    5%;
-    position:         fixed;
+   
   }
 
   
@@ -75,29 +75,17 @@ header {
          
         }
 
-        
     
-        /* Ez kell? */    
-       /* .js-nav--wrapper.js-is-open .nav > .js-nav--item:hover::after {  [2] 
-          display: none;
-        }*/
-         
       
     .js-nav--menu {
       display:      block;
       color:        var(--brand-color);
     }
     
-    
-    
-      .js-nav--menu.js-highlight {
-        opacity:          1;
-      }
-
     /*Active link is highlighted*/
     
     .js-nav--item__active {
-      font-weight:     bold;
+      color:     var(--secondary-color);
       
     }
 
@@ -138,7 +126,7 @@ header {
       }
     
       .js-nav--item, .js-nav--item__logo {
-        position:        relative; /* to position the underline */
+         
         display:         flex;
         justify-content: center;
         align-items:     center;
@@ -146,48 +134,13 @@ header {
         height:          var(--header-height);
       }
     
-      /*in case of hover, underline is shown at the bottom of the navbar*/
-    
-        .js-nav--item:hover::after {
-          content:          "";
-          display:          block;
-          width:            100%;
-          height:           0.2rem;
-          background-color: var(--secondary-color);
-          position:         absolute;
-          bottom:           0;
-          left:             0;
-         
-        }
-      
-    
-        .js-nav--item:hover, .js-nav--menu:hover {
-          
+        .js-nav--item:hover, .js-nav--item__logo:hover, .js-nav--menu:hover {
+          color:           var(--primary-color);
           transition:       0.3s;
         }
   
-        .js-nav--item__logo:hover::after {
-          content:          "";
-          display:          block;
-          width:            100%;
-          height:           0.2rem;
-          background-color: var(--secondary-color);
-          position:         absolute;
-          bottom:           0;
-          left:             0;
-          
-        
-        }
-  
-      /*Active link is highlighted*/
-    
-        .js-nav--item__active {
-          font-weight:     bold;
-        }
-    
   
     /*Sandvich menu is not shown on desktop */
-    
     
     .js-nav--menu {
       display:         none;

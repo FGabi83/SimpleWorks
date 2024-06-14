@@ -5,7 +5,6 @@ function dropdownMenu() {
   
   navMenu.addEventListener("click", () => { 
     navWrapper.classList.toggle("js-is-open");
-    navMenu.classList.toggle("js-highlight");
   }); 
 
   

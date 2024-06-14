@@ -37,35 +37,23 @@
     flex-grow:       1;
     width:           100%;
     margin-top:      var(--header-height);
-    
+    gap:             3rem;
   }
 
-  .section {
-    display:         flex;
-    flex-flow:       column nowrap;
-    justify-content: flex-start;
-    align-items:     center;
-    width:           100%;
-    gap:             2rem;
-    padding:         1rem;
-  }
+  
+  
 
-  @media (min-width: 400px) {
-    .section {
-      padding-left: 5%;
-      padding-right: 5%;
-    }
+@media (min-width: 744px) {
+  main {
+    gap: 4rem;
   }
+}
 
-  @media (min-width: 768px) {
-    .section {
-      padding-left:  10%;
-      padding-right: 10%;
-      gap:           3rem;
-      padding-top:   3rem;
-    }
+@media (min-width: 956px) {
+  main {
+    gap: 5rem;
   }
-
+}
  
   
 

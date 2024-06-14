@@ -1,13 +1,13 @@
 .btn {
       
     display:        inline-block;
-    width:          clamp(11.6436rem, 90%, 15rem);
+    width:          clamp(11.6436rem, 100%, 15rem);
     border:         0.125rem solid;
+    border-radius:  .125rem;
     opacity:        1;
     padding:        .5rem;
     font-size:      var(--font-size-small);
     line-height:    var(--line-height-small);
-    font-weight:    500;
     text-align:     center;
     text-transform: uppercase;
     align-self:     center;
@@ -20,7 +20,7 @@
     .btn__primary {
       background:   var(--brand-color) 0% 0% no-repeat padding-box;
       border-color: var(--brand-color);
-      color:        var(--secondary-color);
+      color:        var(--background-color);
     }
 
     .btn__primary:hover {
@@ -38,39 +38,40 @@
     .btn__hollow:hover {
       background:   var(--brand-color);
       border-color: var(--brand-color);
-      color:        var(--secondary-color);
+      color:        var(--background-color);
     }
 
-    .btn__hero {
+    /*.btn__hero {
       background:   var(--brand-color) 0% 0% no-repeat padding-box;
       border-color: var(--brand-color);
-      color:        var(--secondary-color);
+      color:        var(--background-color);
     }
 
     .btn__hero:hover {
       background:   transparent;
-      color:        var(--secondary-color);
+      color:        var(--background-color);
     }
 
     .btn__hero__hollow {
       background:   transparent;
       border-color: var(--brand-color);
-      color:        var(--secondary-color);
+      color:        var(--background-color);
     }
 
     .btn__hero__hollow:hover {
       background:   var(--brand-color) 0% 0% no-repeat padding-box;
       border-color: var(--brand-color);
       
-    }
+    }*/
 
-    .buttons--wrapper {
+    .btn--wrapper {
       display:         flex;
       flex-flow:       column nowrap;
-      justify-content: space-between;
+      justify-content: flex-start;
       width:           100%;
       gap:             1.4rem;
-    
+      margin-top:      1.5rem;
+      margin-bottom:   1.1875rem;
     }
 
     /*
@@ -86,23 +87,28 @@ Extra nagy (XL): Legalább 1200px széles készülékek. Ezek az extra nagy kije
 például nagy asztali monitorok.
 */
 @media (min-width: 568px) {
-  .buttons--wrapper {
+  .btn--wrapper {
     flex-flow:       row nowrap;
-    justify-content: center;
     gap:             1rem;
   }
 }
+
 @media (min-width: 768px) {
-  .buttons__hero--wrapper {
-    justify-content: flex-start;
-    gap:             1.4rem;
-    width:           60%;
+  .btn--wrapper {
+    margin-bottom: 1.75rem;
   }
 }
-
-@media (min-width: 1920px) {
+@media (min-width: 986px) {
+  .btn {
+    width: auto;
+    
+  }
+}
+@media (min-width: 1200px) {
   .btn {
     font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
