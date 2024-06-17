@@ -127,7 +127,11 @@ html {
      
 
     .text__bold {
-      font-weight: bold;
+      font-weight: 600;
+    }
+
+    .text__uppercase {
+      text-transform: uppercase;
     }
 
    
