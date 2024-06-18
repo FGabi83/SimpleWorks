@@ -1,20 +1,19 @@
 .testimonials {
-  width:          100%;
+  width:          100vw;
   max-width:      1440px;
-  padding-left:    var(--padding-left-right);
+  padding-left:   var(--padding-left-right);
   padding-right:  var(--padding-left-right);
   display:        flex;
-  flex-flow:      row nowrap;
+  flex-flow:      column nowrap;
   align-items:    center;
-  justify-content: space-between;
+  justify-content: center;
+  gap:             1rem;
+ 
 }
 
 
 
 /*ARROWS*/
-
-
-
 
 .arrow--wrapper {
   display: none;
@@ -26,25 +25,44 @@
 
 /*TESTIMONIALS WRAPPER & CONTENT*/
 
+.testimonials-slider {
+  width:           100%;
+  display:         flex;
+  align-items:     center;
+  justify-content: space-between;
+}
+
 .testimonials--wrapper {
-  display:        flex;
-  flex-flow:      row nowrap;
-  align-items:    flex-start;
-  justify-content: center;
+  display:    flex;
+  overflow:   hidden;
+  z-index:    -1;
 }
 
 
-.testimonials-content {
-  display: none;
-} 
+  .testimonials-content {
+    flex:            0 0 100%;  
+    text-align:      center;
+    display:         flex;
+    flex-flow:       column nowrap;
+    justify-content: flex-start;
+    align-items:     center;
+    gap:             1.25rem;
+    transition:      transform 0.5s ease;
+    
+            
+  }
 
-.testimonials__active {
-text-align:      center;
-display:         flex;
-flex-flow:       column nowrap;
-justify-content: flex-start;
-align-items:     center;
-gap:             1.25rem;
+    
+
+  
+  .js-transform {
+    transform: translateX(-100%); /* A vízszintes elmozdulás animálásának megoldása */
+  }
+
+.testimonials-content h2 {
+  font-size:     var(--font-size-regular);
+  line-height:   var(--line-height-regular);
+  
 }
 
   
@@ -68,14 +86,14 @@ gap:             1.25rem;
   gap:             .625rem;
   
 }
-.dot {
+.js-dot {
   width:            .625rem;
   height:           .625rem;
   border-radius:    50%;
   background-color: var(--secondary-color);
 }
 
-.dot__active {
+.js-dot__active {
   background-color: var(--primary-color);
 }
 

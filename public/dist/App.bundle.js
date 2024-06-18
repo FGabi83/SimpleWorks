@@ -2,33 +2,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./public/javascripts/modules/accordion.js":
-/*!*************************************************!*\
-  !*** ./public/javascripts/modules/accordion.js ***!
-  \*************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-function accordion() {
-  var button = document.querySelector('.js-accordion--btn');
-  var content = document.querySelector('.js-accordion--content');
-  function toggleText() {
-    if (button.textContent === 'Tovább') {
-      button.textContent = 'Vissza';
-    } else {
-      button.textContent = 'Tovább';
-    }
-  }
-  button.addEventListener('click', function () {
-    content.classList.toggle('js-active');
-    toggleText();
-  });
-}
-;
-/* harmony default export */ __webpack_exports__["default"] = (accordion);
-
-/***/ }),
-
 /***/ "./public/javascripts/modules/activeNavItem.js":
 /*!*****************************************************!*\
   !*** ./public/javascripts/modules/activeNavItem.js ***!
@@ -74,6 +47,71 @@ function dropdownMenu() {
   });
 }
 /* harmony default export */ __webpack_exports__["default"] = (dropdownMenu);
+
+/***/ }),
+
+/***/ "./public/javascripts/modules/slider.js":
+/*!**********************************************!*\
+  !*** ./public/javascripts/modules/slider.js ***!
+  \**********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+function slider() {
+  var testimonials = document.querySelectorAll('.js-testimonial');
+  var next = document.querySelector('.js-next');
+  var prev = document.querySelector('.js-previous');
+  var dot = document.querySelectorAll('.js-dot');
+  var toggleTestimonials = function toggleTestimonials() {
+    testimonials.forEach(function (testimonial) {
+      testimonial.classList.toggle('js-transform');
+    });
+  };
+  var toggleDots = function toggleDots() {
+    if (dot[0].classList.contains('js-dot__active')) {
+      dot[0].classList.remove('js-dot__active');
+      dot[1].classList.add('js-dot__active');
+    } else {
+      dot[1].classList.remove('js-dot__active');
+      dot[0].classList.add('js-dot__active');
+    }
+  };
+  var handleClick = function handleClick() {
+    toggleTestimonials();
+    toggleDots();
+  };
+
+  //when clicking next, js-tranform class should be toggled to all testimonials regardless of its index either all have js-dot__active or none
+  next.addEventListener('click', handleClick);
+
+  //when clicking previous, js-transform class should be toggled to all testimonials regardless of its index either all have js-dot__active or none
+  prev.addEventListener('click', handleClick);
+
+  // TOUCHSCREEN
+  var touchstartX = 0;
+  var touchendX = 0;
+  var handleTouchStart = function handleTouchStart(event) {
+    touchstartX = event.changedTouches[0].screenX;
+  };
+  var handleTouchMove = function handleTouchMove(event) {
+    touchendX = event.changedTouches[0].screenX;
+  };
+  var handleTouchEnd = function handleTouchEnd() {
+    var deltaX = touchendX - touchstartX;
+    if (Math.abs(deltaX) >= 30) {
+      // Csak akkor kezeljük, ha az elmozdulás legalább 30 pixel
+      if (deltaX < 0) {
+        handleClick(); // Balra pöccintés
+      } else if (deltaX > 0) {
+        handleClick(); // Jobbra pöccintés
+      }
+    }
+  };
+  document.addEventListener('touchstart', handleTouchStart);
+  document.addEventListener('touchmove', handleTouchMove);
+  document.addEventListener('touchend', handleTouchEnd);
+}
+/* harmony default export */ __webpack_exports__["default"] = (slider);
 
 /***/ }),
 
@@ -136,15 +174,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.css */ "./public/css/style.css");
 /* harmony import */ var _modules_dropdownMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/dropdownMenu */ "./public/javascripts/modules/dropdownMenu.js");
 /* harmony import */ var _modules_activeNavItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/activeNavItem */ "./public/javascripts/modules/activeNavItem.js");
-/* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/accordion */ "./public/javascripts/modules/accordion.js");
+/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/slider */ "./public/javascripts/modules/slider.js");
  // without this import webpack doesn't generate the css file
 
 
 
+/*import accordion from './modules/accordion';*/
 
 (0,_modules_dropdownMenu__WEBPACK_IMPORTED_MODULE_1__["default"])();
 (0,_modules_activeNavItem__WEBPACK_IMPORTED_MODULE_2__["default"])();
-(0,_modules_accordion__WEBPACK_IMPORTED_MODULE_3__["default"])();
+/*accordion();*/
+(0,_modules_slider__WEBPACK_IMPORTED_MODULE_3__["default"])();
 /******/ })()
 ;
 //# sourceMappingURL=App.bundle.js.map

@@ -1,0 +1,47 @@
+.cta {
+  display:         flex;
+  flex-flow:       column nowrap;
+  justify-content: flex-start;
+  align-items:     flex-start;
+  gap:             1rem;
+  padding-left:    var(--padding-left-right);
+  padding-right:   var(--padding-left-right);
+  padding-bottom:  2rem;
+  max-width:      1440px;
+  align-self:      flex-start;
+}
+
+
+.cta-arrow-svg .arrow {
+    stroke: var(--brand-color);
+    stroke-width: 3;
+  }
+  
+
+
+@media (min-width: 609px) {
+  .cta {
+    padding-bottom: 3rem;
+    width: 75%;
+  }
+}
+
+@media (min-width: 936px) {
+  .cta {
+    padding-bottom: 4rem;
+    width: 75%;
+  }
+}
+
+@media (min-width: 1071px) {
+  .cta {
+    padding-bottom: 5rem;
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cta {
+    width: 60%;
+  }
+}
