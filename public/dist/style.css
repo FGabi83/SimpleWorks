@@ -547,10 +547,11 @@ html {
     width:           100%;
     margin-top:      var(--header-height);
     gap:             3rem;
+    
   }
 
   
-  
+
 
 @media (min-width: 744px) {
   main {
@@ -573,7 +574,7 @@ html {
 .btn {
       
     display:        inline-block;
-    width:          clamp(11.6436rem, 100%, 15rem);
+    width:          max(100%, 11.6436rem);
     border:         0.125rem solid;
     border-radius:  .125rem;
     opacity:        1;
@@ -613,28 +614,6 @@ html {
       color:        var(--background-color);
     }
 
-    /*.btn__hero {
-      background:   var(--brand-color) 0% 0% no-repeat padding-box;
-      border-color: var(--brand-color);
-      color:        var(--background-color);
-    }
-
-    .btn__hero:hover {
-      background:   transparent;
-      color:        var(--background-color);
-    }
-
-    .btn__hero__hollow {
-      background:   transparent;
-      border-color: var(--brand-color);
-      color:        var(--background-color);
-    }
-
-    .btn__hero__hollow:hover {
-      background:   var(--brand-color) 0% 0% no-repeat padding-box;
-      border-color: var(--brand-color);
-      
-    }*/
 
     .btn--wrapper {
       display:         flex;
@@ -646,18 +625,12 @@ html {
       margin-bottom:   1.1875rem;
     }
 
-    /*
-Extra kicsi (XS): Kevesebb, mint 576px széles készülékek. Ezek az extra kicsi készülékek, 
-például mobiltelefonok vagy kis táblagépek.
-Kicsi (SM): Legalább 576px széles készülékek. Ezek a kis készülékek, például 
-kis méretű táblagépek vagy nagyobb mobiltelefonok.
-Közepes (MD): Legalább 768px széles készülékek. Ezek közepes méretű készülékek, 
-mint például táblagépek vagy nagyobb mobiltelefonokat elforgatva.
-Nagy (LG): Legalább 992px széles készülékek. Ezek a nagyobb asztali kijelzők vagy 
-nagyobb táblagépek.
-Extra nagy (XL): Legalább 1200px széles készülékek. Ezek az extra nagy kijelzők, 
-például nagy asztali monitorok.
-*/
+ 
+@media (min-width: 435px) {
+  .btn {
+    max-width:    15rem;
+  }
+}
 @media (min-width: 568px) {
   .btn--wrapper {
     flex-flow:       row nowrap;
@@ -673,8 +646,10 @@ például nagy asztali monitorok.
 @media (min-width: 986px) {
   .btn {
     width: auto;
-    
   }
+  .btn__feature {
+    padding-left:  1rem;
+    padding-right: 1rem;}
 }
 @media (min-width: 1200px) {
   .btn {
@@ -968,6 +943,7 @@ HERO SECTION
   align-items:     center;
   justify-content: flex-start;
   gap:             2.5rem;
+  
 }
 
   article {
@@ -976,6 +952,7 @@ HERO SECTION
     align-items:     flex-start;
     justify-content: flex-start;
     gap:             2rem;
+    
   }
 
     .feature--wrapper {
@@ -985,6 +962,7 @@ HERO SECTION
       justify-content: flex-start;
       gap:             1rem;
       
+      
     }
 
       .feature-content {
@@ -993,6 +971,7 @@ HERO SECTION
         align-items:     center;
         justify-content: flex-start;
         gap:             1rem;
+        
       }
 
       .feature-image {
@@ -1024,7 +1003,7 @@ HERO SECTION
 }
 
 @media (min-width:956px) {
-  .feature {
+ .feature {
     gap: 5rem;
   }
   
@@ -1194,17 +1173,27 @@ HERO SECTION
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/cta.css ***!
   \***********************************************************************************************************/
 .cta {
-  display:         flex;
-  flex-flow:       column nowrap;
-  justify-content: flex-start;
-  align-items:     flex-start;
-  gap:             1rem;
+  width:           100%;
+  max-width:      1440px;
   padding-left:    var(--padding-left-right);
   padding-right:   var(--padding-left-right);
-  padding-bottom:  2rem;
-  max-width:      1440px;
-  align-self:      flex-start;
+  padding-bottom:  3rem;
+  
+  
 }
+
+  .cta--wrapper {
+    width:           100%;
+    max-width:       622px;
+    display:         flex;
+    flex-flow:       column nowrap;
+    align-items:     flex-start;
+    justify-content: flex-start;
+    gap:             1rem;
+  }
+
+    
+     
 
 
 .cta-arrow-svg .arrow {
@@ -1212,34 +1201,34 @@ HERO SECTION
     stroke-width: 3;
   }
   
+.cta-link:hover {
+  color: var(--primary-color);
+}
 
+.cta-link:hover ~ .cta-arrow-svg .arrow {
+  stroke: var(--primary-color);
+  
+}
 
-@media (min-width: 609px) {
-  .cta {
-    padding-bottom: 3rem;
+@media (min-width: 627px) {
+  .cta--wrapper {
+   
     width: 75%;
   }
 }
 
-@media (min-width: 936px) {
+@media (min-width: 744px) {
   .cta {
-    padding-bottom: 4rem;
-    width: 75%;
+    margin-bottom: 3.5rem;
   }
 }
 
-@media (min-width: 1071px) {
+@media (min-width: 956px) {
   .cta {
-    padding-bottom: 5rem;
-    width: 70%;
+    margin-bottom: 4.5rem;
   }
 }
 
-@media (min-width: 1200px) {
-  .cta {
-    width: 60%;
-  }
-}
 /*!***************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/privacy.css ***!
   \***************************************************************************************************************/

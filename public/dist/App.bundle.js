@@ -101,9 +101,17 @@ function slider() {
     if (Math.abs(deltaX) >= 30) {
       // Csak akkor kezeljük, ha az elmozdulás legalább 30 pixel
       if (deltaX < 0) {
-        handleClick(); // Balra pöccintés
+        if (testimonials[0].classList.contains('js-transform')) {
+          return; // Ha már balra van tolva, akkor ne csináljon semmit
+        } else {
+          handleClick(); // Balra pöccintés
+        }
       } else if (deltaX > 0) {
-        handleClick(); // Jobbra pöccintés
+        if (!testimonials[0].classList.contains('js-transform')) {
+          return; // Ha már jobbra van tolva, akkor ne csináljon semmit
+        } else {
+          handleClick(); // Jobbra pöccintés
+        }
       }
     }
   };

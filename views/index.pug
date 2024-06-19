@@ -24,7 +24,7 @@ block content
             p Kiváló mobilfelhasználói élményt nyújtó honlapok létrehozására törekszem, melyek zökkenőmentesen működnek minden eszközön, beleértve az asztali gépeket is. 
             p Számomra az egyszerűség és a felhasználóbarát dizájn kiemelt fontosságú, ezért olyan honlapokat tervezek, amelyek könnyen átláthatóak és intuitívak.
             p Hatékony kódolással és saját, egyedi megoldásokkal biztosítom, hogy a honlapok gyorsan és hatékonyan működjenek, nem határolnak be sablonok vagy tartalomkezelő rendszerek.
-            a.btn.btn__hollow(href="/szolgaltatasok") Szolgáltatások
+            a.btn.btn__hollow.btn__feature(href="/szolgaltatasok") Szolgáltatások
           img(src='/images/photos/woman_working.jpg').feature-image
       article
         h2.title.text__brand.article-title Gördülékeny munkafolyamat, nyitott kommunikáció
@@ -32,7 +32,7 @@ block content
           .feature-content 
             p Az első lépés egy igényfelmérő beszélgetés személyesen Budapesten vagy online. Itt átbeszélünk minden fontos részletet, hogy tisztázzuk pontosan, mire van szükséged, így konkrét árajánlatot tudok adni, meghatározzuk a határidőt, és el tudom kezdeni a munkát a honlapodon.
             p A projekt során folyamatosan egyeztetünk, hogy a végeredmény biztosan elnyerje tetszésedet és megfeleljen az elvárásaidnak.
-            a.btn.btn__hollow(href="/gyik") Részletek
+            a.btn.btn__hollow.btn__feature(href="/gyik") Részletek
           img(src='/images/photos/notes.jpg').feature-image
     .testimonials
       .testimonials-slider 
@@ -62,14 +62,15 @@ block content
       .dots--wrapper 
         .js-dot.js-dot__active 
         .js-dot
-    .cta 
-      h2.title.text__brand Indítsd el a projekted még ma!
-      p Készen állsz, hogy egyedi, mobilra optimalizált honlapod legyen? Vedd fel velem a kapcsolatot egy ingyenes konzultációért, és kezdjük el együtt a munkát!
-      .cta-link--wrapper
-        a.text__brand(href="/kapcsolat") Kérj ingyenes konzultációt
-        svg.cta-arrow-svg(width="1em", height="1em", viewBox="0 0 50 50", style="vertical-align: middle;")
-          line(x1="20", y1="25", x2="40", y2="25", class="arrow")
-          polyline(points="30,15 40,25 30,35", class="arrow", fill="none")
+    .cta
+      .cta--wrapper 
+        h2.title.text__brand Indítsd el a projekted még ma!
+        p Készen állsz, hogy egyedi, mobilra optimalizált honlapod legyen? Vedd fel velem a kapcsolatot egy ingyenes konzultációért, és kezdjük el együtt a munkát!
+        .cta-link--wrapper
+          a.cta-link.text__brand(href="/kapcsolat") Kérj ingyenes konzultációt
+          svg.cta-arrow-svg(width="1em", height="1em", viewBox="0 0 50 50", style="vertical-align: middle;")
+            line(x1="20", y1="25", x2="40", y2="25", class="arrow")
+            polyline(points="30,15 40,25 30,35", class="arrow", fill="none")
 
           
       
