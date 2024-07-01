@@ -1,21 +1,22 @@
 function accordion() {
-    const button = document.querySelector('.js-accordion--btn');
-    const content = document.querySelector('.js-accordion--content');
+  const faqQuestions = document.querySelectorAll(".js-question");
     
-    function toggleText() {
-      if (button.textContent === 'Tovább') {
-        button.textContent = 'Vissza';
-      } else {
-        button.textContent = 'Tovább';
-      }
-    }
+  faqQuestions.forEach(question => {
+    question.addEventListener("click", function() {
+      const icon = this.querySelector(".js-question-toggle");
+      const answer = this.nextElementSibling;
+      const text = this.querySelector(".js-question-text"); 
 
-    button.addEventListener('click', () => {
-      content.classList.toggle('js-active');
-      toggleText();
+      // Toggle the visibility of the answer
+      answer.classList.toggle("visible");
+
+      // Toggle the icon direction
+      icon.classList.toggle("rotated");
+
+      // Toggle the bold style of the question
+      text.classList.toggle("bold");
     });
-
-    
-  };
+  }); 
+};
   
   export default accordion;

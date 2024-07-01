@@ -19,6 +19,7 @@
     --header-height:        4.5rem;
     --hero-height:          calc(100dvh - var(--header-height)); 
     --padding-left-right:   6%; 
+    --card-padding:         1.25rem;
     --footer-height:        5rem; 
 } 
 

@@ -7,5 +7,16 @@ block head
   title SimpleWorks | GYIK
   +head 
 block content
-  h1 Gyakori Kérdések
-  p Üdvözöljük a gyakori kérdések oldalon
+  - const faqs = require('../data/faq.json')
+  main.faq
+    h1.title.text__brand.faq-title Gyakori Kérdések
+    .faq-content
+      each faq, index in faqs
+        - const isLast = index === faqs.length - 1
+        .faq-item(class=isLast ? 'last-item' : '')
+          .faq-question.js-question
+            span.faq-text.js-question-text #{faq.question}
+            span.faq-toggle.js-question-toggle
+              svg(class="icon" viewBox="0 0 24 20" fill="none")
+                path(d="M4 7L12 14L20 7" class="icon-path")
+          p.faq-answer.js-answer #{faq.answer}

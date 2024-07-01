@@ -2,6 +2,37 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./public/javascripts/modules/accordion.js":
+/*!*************************************************!*\
+  !*** ./public/javascripts/modules/accordion.js ***!
+  \*************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+function accordion() {
+  var faqQuestions = document.querySelectorAll(".js-question");
+  faqQuestions.forEach(function (question) {
+    question.addEventListener("click", function () {
+      var icon = this.querySelector(".js-question-toggle");
+      var answer = this.nextElementSibling;
+      var text = this.querySelector(".js-question-text");
+
+      // Toggle the visibility of the answer
+      answer.classList.toggle("visible");
+
+      // Toggle the icon direction
+      icon.classList.toggle("rotated");
+
+      // Toggle the bold style of the question
+      text.classList.toggle("bold");
+    });
+  });
+}
+;
+/* harmony default export */ __webpack_exports__["default"] = (accordion);
+
+/***/ }),
+
 /***/ "./public/javascripts/modules/activeNavItem.js":
 /*!*****************************************************!*\
   !*** ./public/javascripts/modules/activeNavItem.js ***!
@@ -182,17 +213,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.css */ "./public/css/style.css");
 /* harmony import */ var _modules_dropdownMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/dropdownMenu */ "./public/javascripts/modules/dropdownMenu.js");
 /* harmony import */ var _modules_activeNavItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/activeNavItem */ "./public/javascripts/modules/activeNavItem.js");
-/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/slider */ "./public/javascripts/modules/slider.js");
+/* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/accordion */ "./public/javascripts/modules/accordion.js");
+/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/slider */ "./public/javascripts/modules/slider.js");
  // without this import webpack doesn't generate the css file
 
 
 
-/*import accordion from './modules/accordion';*/
+
 
 (0,_modules_dropdownMenu__WEBPACK_IMPORTED_MODULE_1__["default"])();
 (0,_modules_activeNavItem__WEBPACK_IMPORTED_MODULE_2__["default"])();
-/*accordion();*/
-(0,_modules_slider__WEBPACK_IMPORTED_MODULE_3__["default"])();
+(0,_modules_accordion__WEBPACK_IMPORTED_MODULE_3__["default"])();
+(0,_modules_slider__WEBPACK_IMPORTED_MODULE_4__["default"])();
 /******/ })()
 ;
 //# sourceMappingURL=App.bundle.js.map

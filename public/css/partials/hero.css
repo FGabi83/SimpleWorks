@@ -16,7 +16,7 @@ HERO SECTION
   flex-flow:          column nowrap;
   justify-content:    flex-start;
   align-items:        center;
- 
+  
   
 } 
 
@@ -44,7 +44,11 @@ HERO SECTION
   
 
 /*Hero background and layout for bigger screens*/
-
+@media (min-width: 380px) {
+  .hero-content {
+    padding-top: 4rem;
+  }
+}
 @media (min-width: 641px) {
  
   .hero-content > * {
