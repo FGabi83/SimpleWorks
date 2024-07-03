@@ -1,17 +1,17 @@
 .services {
-  padding-left: var(--padding-left-right);
-  padding-right: var(--padding-left-right);
-  max-width:     calc(824px + 2*(var(--padding-left-right)));
-  display:      flex;
-  flex-flow:    column nowrap;
-  gap:          4rem;
-  align-items:  center;
+  padding-left:    var(--padding-left-right);
+  padding-right:   var(--padding-left-right);
+  max-width:       calc(824px + 2*(var(--padding-left-right)));
+  display:         flex;
+  flex-flow:       column nowrap;
+  gap:             2rem;
+  align-items:     center;
   justify-content: flex-start;
 }
 
   .services-headline {
     padding-top:     2rem;
-    width:         clamp(15.6rem, 100%, 23.75rem);
+    width:           clamp(15.6rem, 100%, 23.75rem);
   }
 
     .services-headline > h1 {
@@ -32,7 +32,7 @@
       display:       flex;
       flex-flow:     column nowrap;
       border:        .0625rem solid var(--primary-color);
-      border-radius: .125rem;
+      border-radius: .5rem;
       padding:       var(--card-padding);
       width:         clamp(15.6rem, 100%, 23.75rem);
     }
@@ -45,6 +45,7 @@
         border-bottom: .0625rem solid var(--secondary-color);
         padding-bottom: var(--card-padding);
         text-align:     center;
+        width:         100%;
       }
 
       .card-text {
@@ -84,7 +85,8 @@
 
 
    .cta__services {
-    padding-left: 0;
+    padding-top:   2rem;
+    padding-left:  0;
     padding-right: 0;
     width:         clamp(15.6rem, 100%, 23.75rem);
    }
@@ -93,14 +95,18 @@
   :root {
     --card-padding: 1.5625rem; 
   }
-  .services-headline {
-    padding-top:  4rem;
-  }
+  
 }
 
 @media (min-width: 627px) {
   .cta__services > .cta--wrapper {
    width: unset;
+  }
+  .services {
+    gap: 4rem;
+  }
+  .services-headline {
+    padding-top: 4rem;
   }
 }
 

@@ -4,7 +4,7 @@
   padding-left:   var(--padding-left-right);
   padding-right:  var(--padding-left-right);
   padding-bottom: 4rem;
-  max-width:      calc(600px + 2 * var(--padding-left-right));
+  max-width:      calc(31.07rem + 2 * var(--padding-left-right));
 }
 
 .faq-title {
@@ -85,7 +85,9 @@
 
   .js-answer {
     display: none;
-    padding-left: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
+    
   }
 
   .js-answer.visible {

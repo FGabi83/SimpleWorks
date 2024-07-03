@@ -51,10 +51,8 @@ function activeNavItem() {
     var linkCurrentPath = linkArray[linkArray.length - 1];
     var linkWithoutHtml = linkCurrentPath.split('.')[0];
     if (linkCurrentPath === currentPath || linkWithoutHtml === currentPath) {
-      console.log('ok', 'linkCurrentPath:', linkCurrentPath, 'currentPath:', currentPath, 'linkWithoutHtml:', linkWithoutHtml);
       link.classList.add('js-nav--item__active');
     } else {
-      console.log('not ok', 'linkCurrentPath:', linkCurrentPath, 'currentPath:', currentPath, 'linkWithoutHtml:', linkWithoutHtml);
       link.classList.remove('js-nav--item__active');
     }
   });
@@ -89,6 +87,7 @@ function dropdownMenu() {
 
 __webpack_require__.r(__webpack_exports__);
 function slider() {
+  var testimonialsWrapper = document.querySelector('.js-testimonials-div');
   var testimonials = document.querySelectorAll('.js-testimonial');
   var next = document.querySelector('.js-next');
   var prev = document.querySelector('.js-previous');
@@ -146,9 +145,13 @@ function slider() {
       }
     }
   };
-  document.addEventListener('touchstart', handleTouchStart);
-  document.addEventListener('touchmove', handleTouchMove);
-  document.addEventListener('touchend', handleTouchEnd);
+  testimonialsWrapper.addEventListener('touchstart', handleTouchStart, {
+    passive: true
+  });
+  testimonialsWrapper.addEventListener('touchmove', handleTouchMove, {
+    passive: true
+  });
+  testimonialsWrapper.addEventListener('touchend', handleTouchEnd);
 }
 /* harmony default export */ __webpack_exports__["default"] = (slider);
 

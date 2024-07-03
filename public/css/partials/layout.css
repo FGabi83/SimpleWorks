@@ -44,15 +44,12 @@
   
 
 
-/*@media (min-width: 744px) {
-  main {
-    gap: 4rem;
-  }
-}*/
-
 @media (min-width: 956px) {
   main {
     gap: 5rem;
+  }
+  .homepage {
+    gap: 10rem;
   }
 }
  

@@ -7,7 +7,7 @@ block head
   title SimpleWorks | Kezdőlap
   +head 
 block content
-  main 
+  main.homepage 
     .hero
       .hero-content 
         h1.title__hero.text__brand Mobilra optimalizált egyedi honlapok
@@ -24,7 +24,7 @@ block content
             p Kiváló mobilfelhasználói élményt nyújtó honlapok létrehozására törekszem, melyek zökkenőmentesen működnek minden eszközön, beleértve az asztali gépeket is. 
             p Számomra az egyszerűség és a felhasználóbarát dizájn kiemelt fontosságú, ezért olyan honlapokat tervezek, amelyek könnyen átláthatóak és intuitívak.
             p Hatékony kódolással és saját, egyedi megoldásokkal biztosítom, hogy a honlapok gyorsan és hatékonyan működjenek, nem határolnak be sablonok vagy tartalomkezelő rendszerek.
-            a.btn.btn__hollow.btn__feature(href="/szolgaltatasok") Szolgáltatások
+            a.btn.btn__primary.btn__feature(href="/szolgaltatasok") Szolgáltatások
           img(src='/images/photos/woman_working.jpg').feature-image
       article
         h2.title.text__brand.article-title Gördülékeny munkafolyamat, nyitott kommunikáció
@@ -32,9 +32,9 @@ block content
           .feature-content 
             p Az első lépés egy igényfelmérő beszélgetés személyesen Budapesten vagy online. Itt átbeszélünk minden fontos részletet, hogy tisztázzuk pontosan, mire van szükséged, így konkrét árajánlatot tudok adni, meghatározzuk a határidőt, és el tudom kezdeni a munkát a honlapodon.
             p A projekt során folyamatosan egyeztetünk, hogy a végeredmény biztosan elnyerje tetszésedet és megfeleljen az elvárásaidnak.
-            a.btn.btn__hollow.btn__feature(href="/gyik") Részletek
+            a.btn.btn__primary.btn__feature(href="/gyik") Részletek
           img(src='/images/photos/notes.jpg').feature-image
-    .testimonials
+    .testimonials.js-testimonials-div
       .testimonials-slider 
         .arrow--wrapper.js-previous
           svg.arrow-svg(width="50", height="50", viewBox="0 0 50 50")

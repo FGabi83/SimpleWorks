@@ -9,10 +9,8 @@ function activeNavItem() {
     let linkCurrentPath = linkArray[linkArray.length - 1];
     let linkWithoutHtml = linkCurrentPath.split('.')[0];
     if (linkCurrentPath === currentPath || linkWithoutHtml === currentPath) {
-       console.log('ok', 'linkCurrentPath:', linkCurrentPath, 'currentPath:', currentPath, 'linkWithoutHtml:', linkWithoutHtml);
        link.classList.add('js-nav--item__active');
        } else {
-        console.log('not ok', 'linkCurrentPath:', linkCurrentPath, 'currentPath:', currentPath, 'linkWithoutHtml:', linkWithoutHtml);
        link.classList.remove('js-nav--item__active');
     }
     

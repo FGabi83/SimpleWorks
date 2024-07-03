@@ -8,7 +8,7 @@
   },
   {
     "question": "Mennyi idő alatt készül el a honlap?",
-    "answer": "Kapacitás és az adott honlap bonyolultságától függ. (Illetve az ügyfél vàlaszkészségétől.) Egy landing page akár két hét alatt elkészülhet. Egy több oldalas honlap átlag 1 hónap. Igényfelméréskor megbeszéljük, hog a tiéd mennyi idő alatt tud elkészülni."
+    "answer": "Kapacitás és az adott honlap bonyolultságától függ. (Illetve az ügyfél válaszkészségétől.) Egy landing page akár két hét alatt elkészülhet. Egy több oldalas honlap átlag 1 hónap. Igényfelméréskor megbeszéljük, hogy a tiéd mennyi idő alatt tud elkészülni."
   },
   {
     "question": "Hogy zajlik az igényfelmérés és mennyibe kerül?",
@@ -32,7 +32,7 @@
   },
   {
     "question": "Mi az a statikus vagy dinamikus honlap?",
-    "answer": "Azt hívom statikusnak ahol nem vàltozik dinamikusan a tartalom pl nincs egy admin felületed amin híreket vagy blog post-okat tudsz feltenni. A honlapra nem lehet regisztrálni, nem lehet rá kommentelni. Ettől még szép működő gombok lehetnek rajta meg legördülő menű. Nem arról van szó, hogy nem \"interaktív\", hanem a tartalom nem változik dinamikusan.A dinamikusnál lehetséges, hogy mondjuk egy adatbázisból jönnek az adatok, pl egy pub itallapja, vagy egy blog oldal, vagy webshop (webshopot amúgy nem vállalok). Lehet akár regisztrálni a honlapra. Ehhez már szerver oldali szkriptekre van szükség. Én node.js-t használok, tehát ez esetben egy olyan tárhelyre van szükség, amin telepítve van a node.js. Egy ilyen tárhely bérlése drágább mint egy statikus honlapot kiszolgáló tárhely."
+    "answer": "Azt hívom statikusnak ahol nem változik dinamikusan a tartalom pl. nincs egy admin felületed amin híreket vagy blog post-okat tudsz feltenni. A honlapra nem lehet regisztrálni, nem lehet rá kommentelni. Ettől még szép működő gombok lehetnek rajta meg legördülő menű. Nem arról van szó, hogy nem \"interaktív\", hanem a tartalom nem változik dinamikusan. A dinamikusnál lehetséges, hogy mondjuk egy adatbázisból jönnek az adatok, pl. egy pub itallapja, vagy egy blog oldal, vagy webshop (webshopot amúgy nem vállalok). Lehet akár regisztrálni a honlapra. Ehhez már szerver oldali szkriptekre van szükség. Én node.js-t használok, tehát ez esetben egy olyan tárhelyre van szükség, amin telepítve van a node.js. Egy ilyen tárhely bérlése drágább mint egy statikus honlapot kiszolgáló tárhely."
   },
   {
     "question": "Mennyibe kerül a tárhely?",

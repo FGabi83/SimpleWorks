@@ -17,6 +17,7 @@ header {
   justify-content:  center;
   align-items:      flex-start;
   position:         fixed;
+  z-index:          100;
 }
 
   .header--wrapper {

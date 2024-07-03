@@ -1,4 +1,5 @@
 function slider() {
+    const testimonialsWrapper = document.querySelector('.js-testimonials-div');
     const testimonials = document.querySelectorAll('.js-testimonial');
     const next = document.querySelector('.js-next');
     const prev = document.querySelector('.js-previous');
@@ -45,7 +46,6 @@ function slider() {
 
   const handleTouchEnd = () => {
     const deltaX = touchendX - touchstartX;
-    
     if (Math.abs(deltaX) >= 30) { // Csak akkor kezeljük, ha az elmozdulás legalább 30 pixel
       if (deltaX < 0) {
         if (testimonials[0].classList.contains('js-transform')) {
@@ -64,11 +64,14 @@ function slider() {
       }
     }
   };
+  
+    testimonialsWrapper.addEventListener('touchstart', handleTouchStart, { passive: true });
+    testimonialsWrapper.addEventListener('touchmove', handleTouchMove, { passive: true });
+    testimonialsWrapper.addEventListener('touchend', handleTouchEnd);
+   
+ 
+  
 
-  document.addEventListener('touchstart', handleTouchStart);
-  document.addEventListener('touchmove', handleTouchMove);
-  document.addEventListener('touchend', handleTouchEnd);
-
-  }
+}
   
   export default slider;

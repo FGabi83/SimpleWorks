@@ -60,9 +60,13 @@
 
 @media (min-width: 1024px) {
   .contact {
-    padding-top: 0;
-    padding-left: 0;
-    flex-flow: row nowrap;
+    padding-top:    0;
+    padding-left:   0;
+    padding-bottom: 0;
+    flex-flow:      row nowrap;
+    justify-content: flex-start;
+    gap:            3rem;
+    height:         calc(var(--hero-height) - var(--footer-height));
   }
 
   .contact-img {

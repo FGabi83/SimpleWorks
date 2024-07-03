@@ -7,5 +7,32 @@ block head
   title SimpleWorks | Portfólió
   +head 
 block content
-  h1 Portfólió
-  p Üdvözöljük a portfólió oldalon
+  main.portfolio
+    h1.title.text__brand.portfolio-headline Tekintsd meg néhány korábbi munkámat!
+    .portfolio--wrapper 
+      .portfolio-card
+        .portfolio-content 
+          h2.title.text__brand.card-title Bagoly Pub 
+          p.card-text Dinamikus weboldal, ahol a kínálat oldalon szereplő csapon lévő söröket admin felületen lehet beállítani.
+        .img--wrapper 
+          img.img__desktop(src="/images/photos/desktop-bagolypub.png" alt="Bagoly Pub asztali verzió")
+          img.img__mobile(src="/images/photos/mobile-bagolypub.png" alt="Bagoly Pub mobil verzió")
+        a.portfolio-link(href="https://bagolypub.hu/" target="_blank") Ugráss az oldalra
+      .portfolio-card 
+        .portfolio-content
+          h2.title.text__brand.card-title Szabadúszó pszichológus 
+          p.card-text Több oldalas statikus weboldal egy szabadúszó pszichológus számára.
+        .img--wrapper 
+          img.img__desktop(src="/images/photos/desktop-szenasi.png" alt="Szénási Ágnes asztali verzió")
+          img.img__mobile(src="/images/photos/mobile-szenasi.png" alt="Szénási Ágnes mobil verzió")
+        a.portfolio-link(href="https://szenasi-agnes-production.vercel.app/" target="_blank") Ugráss az oldalra
+      .portfolio-card
+        .portfolio-content 
+          h2.title.text__brand.card-title Esküvő szervezés
+          p.card-text Egy oldalas landing page esküvőt szervező pár részére.
+        .img--wrapper 
+          img.img__desktop(src="/images/photos/desktop-wedding.png" alt="Esküvő landing page asztali verzió")
+          img.img__mobile(src="/images/photos/mobile-wedding.png" alt="Esküvő landing page mobil verzió") 
+        a.portfolio-link(href="https://wedding-page-six.vercel.app/" target="_blank") Demo
+  
+  
