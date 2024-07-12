@@ -1,17 +1,20 @@
 extends layout 
 
 include mixins/_head
+include mixins/_head-end
 
 block head 
-  meta(name="description" content="SimpleWorks - SEO text here")
+  meta(name="description" content="Mobilra optimalizált egyedi honlapok fejlesztése. Tedd vállalkozásod online jelenlétét egyedivé és felhasználóbaráttá. Kérj ajánlatot most!")
   title SimpleWorks | Kezdőlap
-  +head 
+  +head
+  link(rel="preload" fetchpriority="high" as="image" href="/images/photos/hero-mobile.jpg" type="image/jpeg") 
+  +headEnd
 block content
   main.homepage 
     .hero
       .hero-content 
         h1.title__hero.text__brand Mobilra optimalizált egyedi honlapok
-        p Tűnj ki a tömegből és szerezz be egy mobilra optimalizált, egyedi fejlesztésű honlapot, amely hatékonyabb és gyorsabb, mint a WordPress vagy más tartalomkezelő rendszer alapú megoldások.  
+        p Szerezz be egy gyors és hatékony honlapot kedvező áron, amely teljes mértékben igazodik az igényeidhez.  
         .btn--wrapper
           a.btn.btn__primary(href="/kapcsolat") Ingyenes konzultáció
           a.btn.btn__hollow(href="/portfolio") Korábbi munkáim
@@ -19,21 +22,21 @@ block content
     section.feature 
       article 
         h2.title.text__brand.article-title Előtérben a mobil eszközök és a felhasználó barát web design
-        .feature--wrapper
+        .feature--wrapper.reverse
           .feature-content
             p Kiváló mobilfelhasználói élményt nyújtó honlapok létrehozására törekszem, melyek zökkenőmentesen működnek minden eszközön, beleértve az asztali gépeket is. 
             p Számomra az egyszerűség és a felhasználóbarát dizájn kiemelt fontosságú, ezért olyan honlapokat tervezek, amelyek könnyen átláthatóak és intuitívak.
             p Hatékony kódolással és saját, egyedi megoldásokkal biztosítom, hogy a honlapok gyorsan és hatékonyan működjenek, nem határolnak be sablonok vagy tartalomkezelő rendszerek.
             a.btn.btn__primary.btn__feature(href="/szolgaltatasok") Szolgáltatások
-          img(src='/images/photos/woman_working.jpg').feature-image
+          img(src='/images/photos/woman_working.jpg' alt='fiatal nő mobilozik' loading='lazy').feature-image
       article
         h2.title.text__brand.article-title Gördülékeny munkafolyamat, nyitott kommunikáció
-        .feature--wrapper.reverse 
+        .feature--wrapper 
           .feature-content 
             p Az első lépés egy igényfelmérő beszélgetés személyesen Budapesten vagy online. Itt átbeszélünk minden fontos részletet, hogy tisztázzuk pontosan, mire van szükséged, így konkrét árajánlatot tudok adni, meghatározzuk a határidőt, és el tudom kezdeni a munkát a honlapodon.
             p A projekt során folyamatosan egyeztetünk, hogy a végeredmény biztosan elnyerje tetszésedet és megfeleljen az elvárásaidnak.
             a.btn.btn__primary.btn__feature(href="/gyik") Részletek
-          img(src='/images/photos/notes.jpg').feature-image
+          img(src='/images/photos/notes.jpg' alt='jegyzet füzet honlap tervvel' loading='lazy').feature-image
     .testimonials.js-testimonials-div
       .testimonials-slider 
         .arrow--wrapper.js-previous
@@ -41,20 +44,21 @@ block content
             line(x1="30", y1="25", x2="10", y2="25", class="arrow", transform="translate(5 0)")
             polyline(points="20,15 10,25 20,35", class="arrow", transform="translate(5 0)")
         .testimonials--wrapper 
+          .testimonials-content.js-testimonial  
+            h2.text__bold.text__uppercase Szénási Ágnes 
+            p.text__bold Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+            .testimonials-profile
+              img.testimonials-image(src="/images/photos/Szenasi-Agi-2.jpg", alt="Szénási Ágnes pszichológus" loading='lazy')
+              p.text__bold Szénási Ágnes 
+              p Pszichológus
           .testimonials-content.js-testimonial
             h2.text__bold.text__uppercase Bagoly Pub 
             p.text__bold Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
             .testimonials-profile
-              img.testimonials-image(src="/images/photos/Talos-Peter.jpg", alt="Tálos Péter")
+              img.testimonials-image(src="/images/photos/Talos-Peter.jpg", alt="Tálos Péter Bagoly Pub ügyvezetője" loadnig='lazy')
               p.text__bold Tálos Péter 
               p Bagoly Pubs Kft.
               p Cégtulajdonos
-          .testimonials-content.js-testimonial  
-            h2.text__bold.text__uppercase Szénási Ágnes 
-            p.text__bold Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
-            img.testimonials-image(src="/images/photos/Szenasi-Agi.jpg", alt="Szénási Ágnes")
-            p.text__bold Szénási Ágnes 
-            p Pszichológus
         .arrow--wrapper.js-next
           svg.arrow-svg(width="50", height="50", viewBox="0 0 50 50")
             line(x1="20", y1="25", x2="40", y2="25", class="arrow", transform="translate(-5 0)")

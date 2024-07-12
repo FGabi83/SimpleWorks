@@ -54,6 +54,7 @@
   }
   .feature-content > .btn {
     align-self: flex-start;
+    margin-top: 2rem;
   }
   .feature-image {
     width:    37%;
@@ -89,6 +90,7 @@
     align-items:  stretch;
     gap:          2rem;
   }
+  
   .feature-content > p:last-of-type {
     margin-bottom: 2rem;
    

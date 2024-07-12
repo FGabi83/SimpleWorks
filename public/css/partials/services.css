@@ -44,6 +44,8 @@
       .card-title {
         border-bottom: .0625rem solid var(--secondary-color);
         padding-bottom: var(--card-padding);
+        font-size: calc(var(--font-size-regular) * 1.4);
+        line-height: calc(var(--font-size-regular) * 1.4);
         text-align:     center;
         width:         100%;
       }
@@ -76,8 +78,8 @@
         padding-top: var(--card-padding);
         border-top:  .0625rem solid var(--secondary-color);
         text-align:  center;
-        font-size:   var(--font-size-title);
-        line-height: calc(var(--font-size-title) * 1.2);
+        font-size: calc(var(--font-size-regular) * 1.4);
+        line-height: calc(var(--font-size-regular) * 1.4);
         font-weight: 600;
       }
 

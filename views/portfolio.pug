@@ -1,38 +1,43 @@
 extends layout 
 
 include mixins/_head
+include mixins/_head-end
 
 block head 
-  meta(name="description" content="SimpleWorks - SEO text here")
+  meta(name="description" content="Nézd meg korábbi munkáimat, ahol egy-egy példát mutatok landing page, statikus és dinamikus weboldal típusokra.")
   title SimpleWorks | Portfólió
-  +head 
+  +head
+  link(rel="preload" fetchpriority="high" as="image" href="/images/photos/mobile-wedding.jpg" type="image/jpeg")
+  +headEnd
 block content
   main.portfolio
     h1.title.text__brand.portfolio-headline Tekintsd meg néhány korábbi munkámat!
     .portfolio--wrapper 
       .portfolio-card
         .portfolio-content 
-          h2.title.text__brand.card-title Bagoly Pub 
-          p.card-text Dinamikus weboldal, ahol a kínálat oldalon szereplő csapon lévő söröket admin felületen lehet beállítani.
+          h2.title.text__brand.card-title Landing page
+          p.card-text Landing page koncepció terv esküvőt szervező pár részére. A pár képe görgetésre banner-ré változik.
         .img--wrapper 
-          img.img__desktop(src="/images/photos/desktop-bagolypub.png" alt="Bagoly Pub asztali verzió")
-          img.img__mobile(src="/images/photos/mobile-bagolypub.png" alt="Bagoly Pub mobil verzió")
-        a.portfolio-link(href="https://bagolypub.hu/" target="_blank") Ugráss az oldalra
+          img.img__desktop(src="/images/photos/desktop-wedding.jpg" alt="Esküvő landing page asztali verzió")
+          img.img__mobile(src="/images/photos/mobile-wedding.jpg" alt="Esküvő landing page mobil verzió") 
+        a.portfolio-link(href="https://wedding-page-six.vercel.app/" target="_blank") Megtekintés
       .portfolio-card 
         .portfolio-content
-          h2.title.text__brand.card-title Szabadúszó pszichológus 
-          p.card-text Több oldalas statikus weboldal egy szabadúszó pszichológus számára.
+          h2.title.text__brand.card-title Statikus weboldal 
+          p.card-text Több oldalas statikus weboldal egy pszichológus számára, ahol a nagy mennyiségű szöveg elrendezésére volt kihívás, hogy könnyen áttekinthető legyen.
         .img--wrapper 
-          img.img__desktop(src="/images/photos/desktop-szenasi.png" alt="Szénási Ágnes asztali verzió")
-          img.img__mobile(src="/images/photos/mobile-szenasi.png" alt="Szénási Ágnes mobil verzió")
-        a.portfolio-link(href="https://szenasi-agnes-production.vercel.app/" target="_blank") Ugráss az oldalra
+          img.img__desktop(src="/images/photos/desktop-szenasi.jpg" alt="Szénási Ágnes asztali verzió")
+          img.img__mobile(src="/images/photos/mobile-szenasi.jpg" alt="Szénási Ágnes mobil verzió")
+        a.portfolio-link(href="https://szenasi-agnes-production.vercel.app/" target="_blank") Megtekintés
       .portfolio-card
         .portfolio-content 
-          h2.title.text__brand.card-title Esküvő szervezés
-          p.card-text Egy oldalas landing page esküvőt szervező pár részére.
+          h2.title.text__brand.card-title Dinamikus weboldal 
+          p.card-text Egy pub dinamikus weboldala, ahol a kínálat oldalon szereplő csapon lévő söröket admin felületen lehet beállítani.
         .img--wrapper 
-          img.img__desktop(src="/images/photos/desktop-wedding.png" alt="Esküvő landing page asztali verzió")
-          img.img__mobile(src="/images/photos/mobile-wedding.png" alt="Esküvő landing page mobil verzió") 
-        a.portfolio-link(href="https://wedding-page-six.vercel.app/" target="_blank") Demo
+          img.img__desktop(src="/images/photos/desktop-bagolypub.jpg" alt="Bagoly Pub asztali verzió")
+          img.img__mobile(src="/images/photos/mobile-bagolypub.jpg" alt="Bagoly Pub mobil verzió")
+        a.portfolio-link(href="https://bagolypub.hu/" target="_blank") Megtekintés
+      
+      
   
   

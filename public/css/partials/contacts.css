@@ -13,6 +13,7 @@
   width:         100%;
   aspect-ratio:  1 / 1;
   background:    url('/images/photos/mobile-profile.jpg') no-repeat center / cover;
+  border-radius: .5rem;
 }
 
 .contact--wrapper {
@@ -53,9 +54,9 @@
 }
 
 @media (min-width: 800px) {
-  .contact-img {
-    background: url('/images/photos/desktop-profile.jpg') no-repeat center / cover;
-  } 
+    .contact-img {
+    background: url('/images/photos/tablet-profile.jpg') no-repeat center / cover;
+    }  
 }
 
 @media (min-width: 1024px) {
@@ -63,20 +64,25 @@
     padding-top:    0;
     padding-left:   0;
     padding-bottom: 0;
-    flex-flow:      row nowrap;
+    flex-flow:      row-reverse nowrap;
     justify-content: flex-start;
     gap:            3rem;
     height:         calc(var(--hero-height) - var(--footer-height));
   }
 
   .contact-img {
+    background: url('/images/photos/desktop-profile-2.jpg') no-repeat bottom / cover;
     aspect-ratio: unset;
-    width: 50%;
+    width: min(50%, 37.5rem);
     height: 100vh;
+    border-radius: unset;
+    
   }
 
   .contact--wrapper {
-    width: min(50%, 37.5rem);
+    width: min(50%, 33.75rem);
+    padding-left: 10%;
+    text-align: left;
   }
 
   

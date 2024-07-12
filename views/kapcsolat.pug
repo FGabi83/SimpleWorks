@@ -1,11 +1,14 @@
 extends layout 
 
 include mixins/_head
+include mixins/_head-end
 
 block head 
-  meta(name="description" content="SimpleWorks - SEO text here")
+  meta(name="description" content="Üdvözöllek! Tálos-Farkas Gabriella vagyok, webfejlesztő. Ha kérdésed van vagy együtt szeretnél dolgozni velem, írj bátran!")
   title SimpleWorks | Kapcsolat
   +head 
+  link(rel="preload" fetchpriority="high" as="image" href="/images/photos/mobile-profile.jpg" type="image/jpeg")
+  +headEnd
 block content
   main.contact
     .contact-img 

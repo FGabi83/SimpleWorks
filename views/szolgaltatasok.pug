@@ -1,11 +1,13 @@
 extends layout 
 
 include mixins/_head
+include mixins/_head-end
 
 block head 
-  meta(name="description" content="SimpleWorks - SEO text here")
+  meta(name="description" content="Szolgáltatásaim közé tartozik landing page készítés, statikus és dinamikus weboldalak fejlesztése, valamint karbantartás egyéni vállalkozók és kisvállalkozások számára")
   title SimpleWorks | Szolgáltatások
-  +head 
+  +head
+  +headEnd 
 block content
   main.services
     .services-headline
@@ -17,7 +19,7 @@ block content
         .card-text 
           p Egyszerű, egyoldalas reszponzív weboldal, amely bemutatja a vállalkozásod vagy egy terméket/szolgáltatást.
           ul.card-list 
-            li domain regisztráció és tárhely kezelés (kapcsolódó költségek nem képezik részét a csomagárnak)
+            li domain regisztráció és tárhely kezelés 
             li jogtiszta képek gyűjtése
             li szöveg vázlat írása
             li honlap drótváz
@@ -33,7 +35,7 @@ block content
         .card-text 
           p 3-4 oldalas reszponzív statikus weboldal, amely bemutatja vállalkozásod, szolgáltatásaid és kapcsolati információidat. 
           ul.card-list 
-            li domain regisztráció és tárhely kezelés (kapcsolódó költségek nem képezik részét a csomagárnak)
+            li domain regisztráció és tárhely kezelés 
             li jogtiszta képek gyűjtése
             li szöveg vázlat írása
             li honlap drótváz
@@ -49,13 +51,13 @@ block content
         .card-text 
           p 3-4 oldalas reszponzív dinamikus weboldal, egyedi admin felülettel és adatbázissal, hogy a tartalom könnyedén módosítható legyen. Például blogok, hírek aloldal. 
           ul.card-list 
-            li domain regisztráció és tárhely kezelés (kapcsolódó költségek nem képezik részét a csomagárnak)
+            li domain regisztráció és tárhely kezelés 
             li jogtiszta képek gyűjtése
             li szöveg vázlat írása
             li honlap drótváz
             li reszponzív design
             li honlap lefejlesztése
-            li adatbázis regisztráció (esetleges kapcsólódó költségek nem képezik részét a csomagárnak)
+            li adatbázis regisztráció 
             li technikai/onsite SEO
             li Google Search Console beállítása
             li Cookie Consent igény szerint

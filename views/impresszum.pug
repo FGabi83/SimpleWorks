@@ -1,11 +1,13 @@
 extends layout 
 
 include mixins/_head
+include mixins/_head-end
 
 block head 
   meta(name="description" content="SimpleWorks - SEO text here")
   title SimpleWorks | Impresszum
   +head 
+  +headEnd
 block content
   h1 Impresszum
   p Üdvözöljük az impresszum oldalon

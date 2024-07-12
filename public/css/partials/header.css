@@ -21,7 +21,7 @@ header {
 }
 
   .header--wrapper {
-    width:            min(100%, 1440px);
+    width:            min(100%, 1920px);
     display:          flex;
     flex-flow:        row nowrap;
     justify-content:  space-between;  
