@@ -11,14 +11,19 @@ footer {
     background:       var(--background-color);
     border-top:       2px solid var(--secondary-color);
     opacity:          1;
+    padding-left:     var(--padding-left-right);
+    padding-right:    var(--padding-left-right);
+    text-align:       center;
     
   }
 
   .links--wrapper {
     display:         flex;
-    flex-flow:       column nowrap;
+    flex-flow:       row nowrap;
     justify-content: center;
     align-items:     center;
+    gap:             .3125rem;
+    
   
   }
   

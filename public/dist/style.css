@@ -374,10 +374,10 @@
     --font-size-small:      0.875rem;
     --line-height-small:    1.2rem;
     --header-height:        clamp(3.5rem, 5vw + 2rem, 6rem);
-    --hero-height:          calc(100vh - var(--header-height)); 
+    --hero-height:          calc(100dvh - var(--header-height)); 
     --padding-left-right:   6%; 
     --card-padding:         1.25rem;
-    --footer-height:        5rem; 
+    --footer-height:        auto; 
 } 
 
 /* normalize CSS */
@@ -438,7 +438,7 @@ html {
         font-weight:    600;
         font-size:      var(--hero-title);
         line-height:    calc(var(--hero-title) * 1.2);
-        margin-bottom:  1.3rem;
+        margin-bottom:  1rem;
       }
 
       
@@ -465,8 +465,8 @@ html {
     }
 
     .text__logo {
-      font-size:   clamp(1.5rem, 1.5vw + 1rem, 2rem);
-      
+      font-family:    'Montserrat', sans-serif;
+      /*font-size:   clamp(1.5rem, 1.5vw + 1rem, 2rem);*/
       line-height: var(--header-height);
       color:       var(--brand-color);
     }
@@ -560,9 +560,9 @@ html {
   main {
     gap: 5rem;
   }
-  .homepage {
+  /*.homepage {
     gap: 10rem;
-  }
+  }*/
 }
  
   
@@ -616,6 +616,34 @@ html {
       color:        var(--background-color);
     }
 
+    .btn__primary__hero {
+      background:   var(--brand-color) 0% 0% no-repeat padding-box;
+      border-color: var(--brand-color);
+      color:        var(--background-color);
+      border:       1px solid;
+    }
+
+    .btn__primary__hero:hover {
+      background:   transparent;
+      border-color: var(--brand-color);
+      color:        var(--brand-color);
+    
+    }
+
+    .btn__hollow__hero {
+      background:   transparent;
+      border-color: var(--primary-color);
+      color:        var(--primary-color);
+      border:       1px solid var(--primary-color);
+      font-weight:  400;
+    }
+
+    .btn__hollow__hero:hover {
+      background:   var(--brand-color);
+      border-color: var(--brand-color);
+      color:        var(--background-color);
+    }
+
 
     .btn--wrapper {
       display:         flex;
@@ -623,22 +651,31 @@ html {
       justify-content: flex-start;
       width:           100%;
       gap:             1rem; /*1.4rem volt*/
-      margin-top:      1.3rem;
+      margin-top:      1rem;
       margin-bottom:   1.1875rem;
       margin-bottom:   0;
       z-index:         2;
     }
 
  
-@media (min-width: 435px) {
+/*@media (min-width: 435px) {
   .btn {
     max-width:    15rem;
   }
-}
+  .btn__primary__hero, .btn__hollow__hero {
+    max-width: unset;
+  }
+}*/
 @media (min-width: 568px) {
   .btn--wrapper {
     flex-flow:       row nowrap;
    /* gap:             1rem;*/
+  }
+  .btn {
+    max-width:    15rem;
+  }
+  .btn__primary__hero, .btn__hollow__hero {
+    max-width: unset;
   }
 }
 
@@ -864,112 +901,169 @@ HERO SECTION
 /* Hero background and color */
 
 .hero {
-  width:              100%;
-  display:            flex;
-  flex-flow:          column nowrap;
-  justify-content:    flex-start;
-  align-items:        center;
-  height:             var(--hero-height);
-  
-} 
-
-
-.hero-content {
-  display:         flex;
-  flex-flow:       column nowrap;
-  justify-content: flex-start;
-  align-items:     flex-start;
-  width:           100%;
-  padding-left:    var(--padding-left-right);
-  padding-right:   var(--padding-left-right);
-  padding-top:     1.8125rem;
-  background:      linear-gradient(to bottom, #ffff 50%, #EBEAEF 100%);
-  height:          auto; 
-  
-}
-
-.hero-image {
-  width:         100%;
-  /*aspect-ratio:    1.5 / 1;*/
-  height:        100%;
-  background:  url('/images/photos/hero-mobile.jpg') no-repeat center / cover;
-  box-shadow:    0 0 10px 0 rgba(235, 234, 239, 1);
-  z-index:       1;
+    width:              100%;
+    max-width:          1920px;
+    display:            flex;
+    flex-flow:          column nowrap;
+    justify-content:    flex-start;
+    align-items:        center;
+    height:             var(--hero-height);
+    
+  } 
   
   
-}
-
+ /* .hero-content {
+    display:         flex;
+    flex-flow:       column nowrap;
+    justify-content: flex-start;
+    align-items:     flex-start;
+    width:           100%;
+    padding-left:    var(--padding-left-right);
+    padding-right:   var(--padding-left-right);
+    height:          auto; 
+    min-height:      50vh;
+   }*/
   
-
-/*Hero background and layout for bigger screens*/
-@media (min-height: 638px) {
-  .hero-content {
-    padding-bottom: 1.8125rem; 
-  }
-}
-@media (min-width: 641px) {
-  .hero-content {
-    padding-top: 4rem;
-  }
-  .hero-content > * {
-    width:  80%;
-    align-self: flex-start;
-  }
   .hero-image {
-    background:    url('/images/photos/hero-tablet.jpg') no-repeat center / cover;
+    width:         100%;
+    height:        100%;
+    height: 50%;
+   /* min-height:    212.25px;*/
+    background:  url('/images/photos/mobile-smartphone-hero.jpg') no-repeat left center / cover;
+    background:  url('/images/photos/mobile-smartphone-hero.webp') no-repeat left center / cover;
   }
-  
-  
-}
 
-/* 986px volt*/
-@media (min-width: 1200px) {
-  .hero {
-    flex-flow:        row-reverse nowrap; /* eredeti */
-    flex-flow:        row nowrap;
-    justify-content:  center;
-    align-items:      center;
-    height:           var(--hero-height);
+  .hero-title, .hero-text, .hero-buttons {
+    width:           100%;
+    padding-left:    var(--padding-left-right);
+    padding-right:   var(--padding-left-right);
   }
-  .hero-content {
-    background:      var(--background-color);
-    width:           50%;
-    height:          100%;
-    justify-content: center;
+
+  .hero-title {
+    /*margin-top: auto;*/
+  }
+
+  .hero-buttons {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+   @media (min-height: 600px) {
+    .hero-title {
+      margin-top:auto;
+    }
+    .hero-buttons {
+      margin-top: auto;
+    }
+   }
+ 
+  @media (min-width: 768px) {
+    .hero-image {
+      height: 50%;
+      background: url('/images/photos/tablet-smartphone-hero.jpg') no-repeat left center / cover;
+      background: url('/images/photos/tablet-smartphone-hero.webp') no-repeat left center / cover;
+    }
+    .hero-title {
+      font-size: 2.5rem;
+      line-height: calc(2.5rem * 1.5);
+      width: 80%;
+      align-self: flex-start;
+      margin-top: auto;
+    }
+    .hero-text {
+      width: 70%;
+      align-self: flex-start;
+    }
+    .hero-buttons {
+      margin-top: auto;
+    }
+  }
+  @media (min-width: 1200px) {
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "title img"
+      "text buttons";
+      place-items: start;
+      row-gap: 10rem;
+      
+    }
+    .hero-image {
+      grid-area: img;
+      background: url('/images/photos/smartphone-hero.jpg') no-repeat left center / cover;
+      background: url('/images/photos/smartphone-hero.webp') no-repeat left center / cover;
+      z-index: 1;
+      height: 45.7vh;
+    }
+    .hero-title {
+      grid-area: title;
+      font-size: 5rem;
+      line-height: calc(5rem * 1.5);
+      place-self: end start;
+      width: 140%;
+      padding-left: 15%;
+      z-index: 2;
+      margin: 0;
+      
+    }
+    
+    .hero-text {
+      grid-area: text;
+      width: 75%;
+      padding-left: 15%;
+      
+    }
+    .hero-buttons {
+      grid-area: buttons;
+      margin:    0;
+      
+      
+    }
    
   }
-  .hero-content > * {
-    width: min(100%, 571.531px);
-    align-self: flex-end;
-  }
-  .hero-image {
-    background:    url('/images/photos/hero-desktop.jpg') no-repeat center / cover;
-    background-position: 35% center;
-    width:           50%;
-    height:          100%;
-    box-shadow:      unset;
-    z-index:         unset;
-  }
-}
 
-@media (min-width: 1440px) {
-  .hero {
-    position: relative;
+ @media (min-width: 1333px) {
+    .hero-title {
+      width: 130%;
+    }
   }
-  .hero::before {
-    content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--secondary-color);
-  opacity: .1;
-  box-shadow: 0 50px 50px 0 rgba(var(--secondary-color), 1);
-   
+
+ 
+
+ @media (min-width: 1456px) {
+    .hero-title {
+      width: 120%;
+    }
   }
-  /*border-bottom: 2px solid #E9E9F1;*/
-}
+
+@media (min-width: 1603px) {
+    .hero-title {
+      width: 110%;
+      position: relative;
+      left: 25%;
+    }
+    .hero-text {
+      position: relative;
+      left: 25%;
+    }
+  }
+  @media (min-width: 1783px) {
+    .hero-title {
+      width: 100%;
+      
+    }
+  }
+
+ @media (min-width: 1668px) and (max-height: 953px) {
+  .hero-image {
+    height: 100%;
+  }
+  .hero-title {
+    top: 5%;
+  }
+ }
 /*!***************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/css/partials/feature.css ***!
   \***************************************************************************************************************/
@@ -1587,9 +1681,12 @@ HERO SECTION
     justify-content: center;
     padding-bottom: var(--card-padding);
   }
-  .img__desktop {
+  .pic__desktop {
     display: none;
   }
+  /*.img__desktop {
+    display: none;
+  }*/
 
   .img__mobile {
     display: block;
@@ -1635,16 +1732,25 @@ HERO SECTION
     width: clamp(15.6rem, 100%, 82.125rem); 
     align-content: center;
   }
-  .img__desktop {
+  .pic__desktop {
     display: block;
     width: 70%;
-    height: auto;
+  }
+  .img__desktop {
+    /*display: block;*/
+    width: 100%;
+    height: 100%;
     border-radius: .5rem;
     object-fit: cover;
   }
-  .img__mobile {
+  .pic__mobile {
     width: 20%;
-    height: auto;
+    height: 100%;
+    
+  }
+  .img__mobile {
+    width: 100%;
+    height: 100%;
   }
   .img--wrapper {
     /*border: 1px solid red;*/
@@ -1693,6 +1799,7 @@ HERO SECTION
   width:         100%;
   aspect-ratio:  1 / 1;
   background:    url('/images/photos/mobile-profile.jpg') no-repeat center / cover;
+  background:    url('/images/photos/mobile-profile.webp') no-repeat center / cover;
   border-radius: .5rem;
 }
 
@@ -1736,6 +1843,7 @@ HERO SECTION
 @media (min-width: 800px) {
     .contact-img {
     background: url('/images/photos/tablet-profile.jpg') no-repeat center / cover;
+    background: url('/images/photos/tablet-profile.webp') no-repeat center / cover;
     }  
 }
 
@@ -1752,6 +1860,7 @@ HERO SECTION
 
   .contact-img {
     background: url('/images/photos/desktop-profile-2.jpg') no-repeat bottom / cover;
+    background: url('/images/photos/desktop-profile-2.webp') no-repeat bottom / cover;
     aspect-ratio: unset;
     width: min(50%, 37.5rem);
     height: 100vh;
@@ -1833,14 +1942,19 @@ footer {
     background:       var(--background-color);
     border-top:       2px solid var(--secondary-color);
     opacity:          1;
+    padding-left:     var(--padding-left-right);
+    padding-right:    var(--padding-left-right);
+    text-align:       center;
     
   }
 
   .links--wrapper {
     display:         flex;
-    flex-flow:       column nowrap;
+    flex-flow:       row nowrap;
     justify-content: center;
     align-items:     center;
+    gap:             .3125rem;
+    
   
   }
   

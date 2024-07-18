@@ -43,6 +43,34 @@
       color:        var(--background-color);
     }
 
+    .btn__primary__hero {
+      background:   var(--brand-color) 0% 0% no-repeat padding-box;
+      border-color: var(--brand-color);
+      color:        var(--background-color);
+      border:       1px solid;
+    }
+
+    .btn__primary__hero:hover {
+      background:   transparent;
+      border-color: var(--brand-color);
+      color:        var(--brand-color);
+    
+    }
+
+    .btn__hollow__hero {
+      background:   transparent;
+      border-color: var(--primary-color);
+      color:        var(--primary-color);
+      border:       1px solid var(--primary-color);
+      font-weight:  400;
+    }
+
+    .btn__hollow__hero:hover {
+      background:   var(--brand-color);
+      border-color: var(--brand-color);
+      color:        var(--background-color);
+    }
+
 
     .btn--wrapper {
       display:         flex;
@@ -50,22 +78,31 @@
       justify-content: flex-start;
       width:           100%;
       gap:             1rem; /*1.4rem volt*/
-      margin-top:      1.3rem;
+      margin-top:      1rem;
       margin-bottom:   1.1875rem;
       margin-bottom:   0;
       z-index:         2;
     }
 
  
-@media (min-width: 435px) {
+/*@media (min-width: 435px) {
   .btn {
     max-width:    15rem;
   }
-}
+  .btn__primary__hero, .btn__hollow__hero {
+    max-width: unset;
+  }
+}*/
 @media (min-width: 568px) {
   .btn--wrapper {
     flex-flow:       row nowrap;
    /* gap:             1rem;*/
+  }
+  .btn {
+    max-width:    15rem;
+  }
+  .btn__primary__hero, .btn__hollow__hero {
+    max-width: unset;
   }
 }
 

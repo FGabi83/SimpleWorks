@@ -13,6 +13,7 @@
   width:         100%;
   aspect-ratio:  1 / 1;
   background:    url('/images/photos/mobile-profile.jpg') no-repeat center / cover;
+  background:    url('/images/photos/mobile-profile.webp') no-repeat center / cover;
   border-radius: .5rem;
 }
 
@@ -56,6 +57,7 @@
 @media (min-width: 800px) {
     .contact-img {
     background: url('/images/photos/tablet-profile.jpg') no-repeat center / cover;
+    background: url('/images/photos/tablet-profile.webp') no-repeat center / cover;
     }  
 }
 
@@ -72,6 +74,7 @@
 
   .contact-img {
     background: url('/images/photos/desktop-profile-2.jpg') no-repeat bottom / cover;
+    background: url('/images/photos/desktop-profile-2.webp') no-repeat bottom / cover;
     aspect-ratio: unset;
     width: min(50%, 37.5rem);
     height: 100vh;
