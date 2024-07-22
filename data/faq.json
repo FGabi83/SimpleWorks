@@ -1,6 +1,6 @@
 [{
     "question": "Mi a honlapkészítés menete?",
-    "answer": "Első egy igényfelmérő beszélgetés személyesen Budapesten vagy online. Itt átbeszélünk minden fontos részetet, hogy tudjak konkrét árajánlatot adni, meg tudjuk határozni a határidőt, és hogy el tudjak kezdeni dolgozni a honlapodon, tudjam mire van szükséged. Az árajánlat elfogadása és előleg befizetése után elkészítem a honlap tervét (wireframe/ honlap alapvető felépítése, illetve design fájlok). A tervek elfogadása után lefejlesztem a honlapot. Ideiglenes domain-en közzéteszem, hogy lásd milyen élesben. Ha szükséges, végső simításokat elvégzem. A fennmaradó összeg befizetése után közzéteszem a végleges domain-en."
+    "answer": "Első egy igényfelmérő beszélgetés személyesen Budapesten vagy online. Itt átbeszélünk minden fontos részetet, hogy tudjam mire van szükséged és konkrét árajánlatot tudjak adni, illetve meghatározzuk a határidőt. Az árajánlat elfogadása és előleg befizetése után elkészítem a honlap tervét: a wireframe -et (honlap alapvető felépítését), illetve a design fájlokat. A tervek elfogadása után lefejlesztem a honlapot. Ideiglenes domain-en közzéteszem, hogy lásd milyen élesben. Ha szükséges, végső simításokat elvégzem. A fennmaradó összeg befizetése után közzéteszem a végleges domain-en."
   },
   {
     "question": "Már van honlapom de nem tetszik/ szeretnék rajta változtatni. Tudsz ebben segíteni?",
@@ -24,7 +24,7 @@
   },
   {
     "question": "Mi történik ha nem tetszik a terv?",
-    "answer": "Mielőtt ténylegesen lefejleszteném a honlapot, átbeszéljük az ún. wireframe-et, a honlap szerkezetét. Miután ez elfogadásra került, bemutatom a design fájl-okat. Átbeszéljük, hogy esetlegesen min változtassak. Jelentős vàltoztatásokat maximum háromszor végzek, ezután bármelyikünk elállhat. Ha az addigi munkám (wireframe, design fájlok) nem kerülnek átadásra, akkor visszakapod az előleget. Ha igényt tartasz rájuk, akkor nem jár vissza az előleg, de minden további kötelezettség nélkül elállhatsz."
+    "answer": "Mielőtt ténylegesen lefejleszteném a honlapot, átbeszéljük az ún. wireframe-et, a honlap szerkezetét. Miután ez elfogadásra került, bemutatom a design fájl-okat. Átbeszéljük, hogy esetlegesen min változtassak. Jelentős vàltoztatásokat maximum kétszer végzek, ezután bármelyikünk elállhat. Ha az addigi munkám (wireframe, design fájlok) nem kerülnek átadásra, akkor visszakapod az előleget. Ha igényt tartasz rájuk, akkor nem jár vissza az előleg, de minden további kötelezettség nélkül elállhatsz."
   },
   {
     "question": "Kell előleget fizetni?",

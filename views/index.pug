@@ -5,7 +5,7 @@ include mixins/_head-end
 
 block head 
   meta(name="description" content="Mobilra optimalizált egyedi honlapok fejlesztése. Tedd vállalkozásod online jelenlétét egyedivé és felhasználóbaráttá. Kérj ajánlatot most!")
-  title SimpleWorks | Kezdőlap
+  title SymplWorks | Kezdőlap
   +head
   link(rel="preload" fetchpriority="high" as="image" href="/images/photos/mobile-smartphone-hero.webp" type="image/webp") 
   +headEnd
@@ -14,10 +14,11 @@ block content
     .hero
       .hero-image
       h1.title__hero.text__brand.hero-title Mobilra optimalizált egyedi honlapok
-      p.hero-text Szerezz be egy gyors és hatékony honlapot kedvező áron, amely teljes mértékben igazodik az igényeidhez.  
-      .btn--wrapper.hero-buttons
-        a.btn.btn__hollow__hero(href="/portfolio") Korábbi munkáim
-        a.btn.btn__primary__hero(href="/kapcsolat") Ingyenes konzultáció
+      .hero-content
+        p.hero-text Szerezz be egy gyors és hatékony honlapot kedvező áron, amely teljes mértékben igazodik az igényeidhez.  
+        .btn--wrapper.hero-buttons
+          a.btn.btn__hollow__hero(href="/portfolio") Korábbi munkáim
+          a.btn.btn__primary__hero(href="/kapcsolat") Ingyenes konzultáció
     section.feature 
       article 
         h2.title.text__brand.article-title Előtérben a mobil eszközök és a felhasználó barát web design
@@ -32,7 +33,7 @@ block content
         h2.title.text__brand.article-title Gördülékeny munkafolyamat, nyitott kommunikáció
         .feature--wrapper 
           .feature-content 
-            p Az első lépés egy igényfelmérő beszélgetés személyesen Budapesten vagy online. Itt átbeszélünk minden fontos részletet, hogy tisztázzuk pontosan, mire van szükséged, így konkrét árajánlatot tudok adni, meghatározzuk a határidőt, és el tudom kezdeni a munkát a honlapodon.
+            p Az első lépés egy igényfelmérő beszélgetés személyesen Budapesten vagy online. Itt átbeszélünk minden fontos részletet, hogy tisztázzuk pontosan, mire van szükséged, így konkrét árajánlatot tudok adni.
             p A projekt során folyamatosan egyeztetünk, hogy a végeredmény biztosan elnyerje tetszésedet és megfeleljen az elvárásaidnak.
             a.btn.btn__primary.btn__feature(href="/gyik") Részletek
           img(src='/images/photos/notes.jpg' alt='jegyzet füzet honlap tervvel' loading='lazy').feature-image
@@ -52,9 +53,9 @@ block content
               p Pszichológus
           .testimonials-content.js-testimonial
             h2.text__bold.text__uppercase Bagoly Pub 
-            p.text__bold Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+            p.text__bold Gabi nagyszerű munkát végzett a honlapom elkészítésében. Bár néhány igényem a projekt során módosult, ő ezt nagy rugalmassággal és professzionalizmussal kezelte. Nagyon elégedett vagyok a végeredménnyel.
             .testimonials-profile
-              img.testimonials-image(src="/images/photos/Talos-Peter.jpg", alt="Tálos Péter Bagoly Pub ügyvezetője" loadnig='lazy')
+              img.testimonials-image(src="/images/photos/Talos-Peter.jpg", alt="Tálos Péter Bagoly Pub ügyvezetője" loading='lazy')
               p.text__bold Tálos Péter 
               p Bagoly Pubs Kft.
               p Cégtulajdonos
