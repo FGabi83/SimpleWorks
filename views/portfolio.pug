@@ -4,8 +4,9 @@ include mixins/_head
 include mixins/_head-end
 
 block head 
-  meta(name="description" content="Nézd meg korábbi munkáimat, ahol egy-egy példát mutatok landing page, statikus és dinamikus weboldal típusokra.")
   title SymplWorks | Portfólió
+  meta(name="description" content="Nézd meg korábbi munkáimat, ahol egy-egy példát mutatok landing page, statikus és dinamikus weboldal típusokra.")
+  link(rel="canonical" href="https://symplworks.hu/portfolio")
   +head
   link(rel="preload" fetchpriority="high" as="image" href="/images/photos/mobile-wedding.webp" type="image/webp")
   +headEnd

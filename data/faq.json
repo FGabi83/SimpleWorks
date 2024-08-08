@@ -1,10 +1,14 @@
 [{
     "question": "Mi a honlapkészítés menete?",
-    "answer": "Első egy igényfelmérő beszélgetés személyesen Budapesten vagy online. Itt átbeszélünk minden fontos részetet, hogy tudjam mire van szükséged és konkrét árajánlatot tudjak adni, illetve meghatározzuk a határidőt. Az árajánlat elfogadása és előleg befizetése után elkészítem a honlap tervét: a wireframe -et (honlap alapvető felépítését), illetve a design fájlokat. A tervek elfogadása után lefejlesztem a honlapot. Ideiglenes domain-en közzéteszem, hogy lásd milyen élesben. Ha szükséges, végső simításokat elvégzem. A fennmaradó összeg befizetése után közzéteszem a végleges domain-en."
+    "answer": "Első egy igényfelmérő beszélgetés személyesen Budapesten vagy online. Itt átbeszélünk minden fontos részetet, hogy tudjam mire van szükséged és konkrét árajánlatot tudjak adni, illetve meghatározzuk a határidőt. Az árajánlat elfogadása és előleg befizetése után elkészítem a honlap tervét: a wireframe-et (honlap alapvető felépítését), illetve a design fájlokat. A tervek elfogadása után lefejlesztem a honlapot. Ideiglenes domain-en közzéteszem, hogy lásd milyen élesben. Ha szükséges, végső simításokat elvégzem. A fennmaradó összeg befizetése után közzéteszem a végleges domain-en."
   },
   {
     "question": "Már van honlapom de nem tetszik/ szeretnék rajta változtatni. Tudsz ebben segíteni?",
     "answer": "Természetesen. Keress meg és beszéljük meg a részleteket. "
+  },
+  {
+    "question": "Készítesz webshopokat is?",
+    "answer": "Nem, jelenleg nem foglalkozom webshopok építésével. Ha webshopra van szükséged, több költséghatékony megoldás is létezik kisvállalkozások számára, például webshop bérlés vagy WooCommerce használata. A szolgáltatásaim inkább az egyéni és kisvállalkozások számára készült weboldalakra fókuszálnak, hogy hatékonyan bemutathasd az üzletedet és a szolgáltatásaidat."
   },
   {
     "question": "Ki írja a szöveget?",
