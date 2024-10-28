@@ -55,9 +55,7 @@
   .pic__desktop {
     display: none;
   }
-  /*.img__desktop {
-    display: none;
-  }*/
+  
 
   .img__mobile {
     display: block;
@@ -103,6 +101,24 @@
     width: clamp(15.6rem, 100%, 82.125rem); 
     align-content: center;
   }
+  .portfolio-content > .card-text {
+    max-height: 20rem;
+    padding-right: 1rem;
+    overflow-y: auto;
+    text-wrap:balance;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+   
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 6px; 
+}
   .pic__desktop {
     display: block;
     width: 70%;
