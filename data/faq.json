@@ -1,6 +1,6 @@
 [{
     "question": "Mi a honlapkészítés menete?",
-    "answer": "Első egy igényfelmérő beszélgetés személyesen Budapesten vagy online. Itt átbeszélünk minden fontos részetet, hogy tudjam mire van szükséged és konkrét árajánlatot tudjak adni, illetve meghatározzuk a határidőt. Az árajánlat elfogadása és előleg befizetése után elkészítem a honlap tervét: a wireframe-et (honlap alapvető felépítését), illetve a design fájlokat. A tervek elfogadása után lefejlesztem a honlapot. Ideiglenes domain-en közzéteszem, hogy lásd milyen élesben. Ha szükséges, végső simításokat elvégzem. A fennmaradó összeg befizetése után közzéteszem a végleges domain-en."
+    "answer": "Első egy igényfelmérő beszélgetés személyesen Budapesten vagy online. Akár email-en ha úgy kényelmesebb Neked. Itt átbeszélünk minden fontos részetet, hogy tudjam mire van szükséged és konkrét árajánlatot tudjak adni, illetve meghatározzuk a határidőt. Az árajánlat elfogadása és előleg befizetése után elkészítem a honlap tervét: a wireframe-et (honlap alapvető felépítését), illetve a design fájlokat. A tervek elfogadása után lefejlesztem a honlapot. Ideiglenes domain-en közzéteszem, hogy lásd milyen élesben. Ha szükséges, végső simításokat elvégzem. A fennmaradó összeg befizetése után közzéteszem a végleges domain-en."
   },
   {
     "question": "Már van honlapom de nem tetszik/ szeretnék rajta változtatni. Tudsz ebben segíteni?",
@@ -16,15 +16,11 @@
   },
   {
     "question": "Mennyi idő alatt készül el a honlap?",
-    "answer": "Kapacitás és az adott honlap bonyolultságától függ. (Illetve az ügyfél válaszkészségétől.) Egy landing page akár két hét alatt elkészülhet. Egy több oldalas honlap átlag 1 hónap. Igényfelméréskor megbeszéljük, hogy a tiéd mennyi idő alatt tud elkészülni."
+    "answer": "Kapacitás és az adott honlap bonyolultságától függ. (Illetve az ügyfél válaszkészségétől.) Egy single page akár két hét alatt elkészülhet. Egy több oldalas honlap átlag 1 hónap. Igényfelméréskor megbeszéljük, hogy a tiéd mennyi idő alatt tud elkészülni."
   },
   {
     "question": "Hogy zajlik az igényfelmérés és mennyibe kerül?",
-    "answer": "Az igényfelmérés ingyenes. Lehet személyesen Budapesten vagy online is. Átbeszéljük, hogy mivel foglalkozik a vállalkozásod, miért van szükséged honlapra, mi vele a célod. Milyen funkciókra van szükséged, vannak e kész szövegek, képek. Vannak e brand elemek. Átbeszélünk minden fontos részletet, hogy konkrét ár ajánlatot tudjak adni és meg tudjuk határozni a határidőt. Kötelezettséggel nem jár ez a beszélgetés. "
-  },
-  {
-    "question": "Miért nem lehet csak egy űrlapot kitölteni igényfelmérő helyett?",
-    "answer": "Konkrét árajánlathoz elengedhetetlen, hogy átbeszéljük a részleteket. Becsült árakat a \"Szolgáltatások\" oldalamon találsz."
+    "answer": "Az igényfelmérés ingyenes. Lehet személyesen Budapesten vagy online is. (Akár email-en ha úgy kényelmesebb Neked.) Átbeszéljük, hogy mivel foglalkozik a vállalkozásod, miért van szükséged honlapra, mi vele a célod. Milyen funkciókra van szükséged, vannak e kész szövegek, képek. Vannak e brand elemek. Átbeszélünk minden fontos részletet, hogy konkrét ár ajánlatot tudjak adni és meg tudjuk határozni a határidőt. Kötelezettséggel nem jár ez a beszélgetés. "
   },
   {
     "question": "Mi történik ha nem tetszik a terv?",
