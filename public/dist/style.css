@@ -364,7 +364,6 @@
     --secondary-color-rgb:  244, 195, 162;
     --brand-color:          #5F7E92; 
     --brand-color-rgb:      95, 126, 146;
-   /* --brand-color:          #465A6D;*/
     --background-color:     #fdfdfd; /* white*/
     --background-color-rgb: 255, 255, 255;
     --font-size-regular:    clamp(1rem, 1vw + .5rem, 1.125rem);
@@ -438,7 +437,7 @@ html {
       .title__hero {
         font-family:    'Montserrat', sans-serif;
         font-weight:    600;
-        color:          rgba(var(--primary-color-rgb, 1));
+        color:          var(--primary-color);
         font-size:      var(--hero-title);
         line-height:    calc(var(--hero-title) * 1.2);
         
